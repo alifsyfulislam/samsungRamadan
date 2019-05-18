@@ -179,6 +179,17 @@ body,html{
     left: 124px;
 }
 
+/*#form_validation{*/
+    /*position: absolute;*/
+    /*top: 170px;*/
+    /*left: 0;*/
+    /*width: 300px;*/
+    /*text-align: center;*/
+    /*font-family: 'samsungone800';*/
+    /*color: black;*/
+    /*font-size: 9px;*/
+/*}*/
+
 .btn{
     font-family: samsungone800;
     height: 23px;

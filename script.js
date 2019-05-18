@@ -58,7 +58,7 @@ var clicked = false;
 swipe_gallery.addEventListener('mousedown', (event)=> {
     if (event.clientX>10 && event.clientX<290) {
         clicked = true;
-        x = event.clientX;
+        x = Math.round(event.clientX);
         curX = x;
         for (var i = 0; i < document.getElementsByClassName("sliderItem").length; i++) {
             preData[i] = leftData[i];
@@ -99,6 +99,7 @@ swipe_gallery.addEventListener('touchend', function (event) {
     }
     scrollImage();
 });
+
 
 
 swipe_gallery.addEventListener('touchmove', function (e) {
