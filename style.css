@@ -121,7 +121,7 @@ body,html{
     font-size: 15px;
     padding-top: 1px;
     z-index: 102;
-    animation: flick 0.5s infinite linear;
+    animation: flick 0.8s infinite linear;
 }
 
 @keyframes flick {
@@ -129,7 +129,7 @@ body,html{
         transform: scale(1);
     }
     50%{
-        transform: scale(.9);
+        transform: scale(.96);
     }
 }
 
@@ -218,7 +218,7 @@ body,html{
 
 @keyframes goLeft {
     to{
-        left: 190px;
+        left: 185px;
     }
 }
 .right_arrow{
@@ -228,7 +228,7 @@ body,html{
 
 @keyframes goRight {
     to{
-        right: 20px;
+        right: 15px;
     }
 }
 
