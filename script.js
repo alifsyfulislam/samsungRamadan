@@ -37,9 +37,11 @@ var myMoveHandler = (event) => {
 
 }
 var scrollImage = () => {
-    console.log(preData[0]);
-    if (preData[0]< -1000) {
+    if (Math.abs(leftData[0])>= 1215) {
         swipe_box.style.display = "none";
+    }
+    else {
+        swipe_box.style.display = "block";
     }
     setTimeout( ()=> {
         if((dx<0 && preData[0]-300<leftData[0] && leftData[0]<=0 && leftData[0]>=-1500)

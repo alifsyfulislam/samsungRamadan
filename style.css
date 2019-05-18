@@ -36,6 +36,16 @@ body,html{
     background-repeat: no-repeat;
 }
 
+.notice{
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    height: 17px;
+    font-family: 'kongshomjbold';
+    text-align: center;
+    font-size: 9px;
+}
+
 .swipe_gallery{
     height: 250px;
     width: 300px;
@@ -153,6 +163,7 @@ body,html{
 }
 
 .mobile_num{
+    text-align: center;
     height: 20px;
     width: 140px;
     border-radius: 5px;
@@ -175,7 +186,7 @@ body,html{
     background-color: #05509e;
     color: white;
     font-size: 11px;
-    padding-top: 1px;
+    padding-top: 2px;
     outline: none;
     border: none;
     border-radius: 5px;
@@ -191,6 +202,34 @@ body,html{
     position: absolute;
     top: 125px;
     left: 0;
+}
+
+.left_arrow,.right_arrow{
+    font-family: samsungone800;
+    font-size: 11px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+}
+.left_arrow{
+    left: 225px;
+    animation: goLeft 1s linear infinite;
+}
+
+@keyframes goLeft {
+    to{
+        left: 190px;
+    }
+}
+.right_arrow{
+    right: 55px;
+    animation: goRight 1s linear infinite;
+}
+
+@keyframes goRight {
+    to{
+        right: 20px;
+    }
 }
 
 .counter_box{
